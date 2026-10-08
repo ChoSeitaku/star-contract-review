@@ -1,0 +1,20 @@
+[project]
+name = "star-contract-review"
+version = "0.1.0"
+description = "合同审批审查系统 - 面向企业合同审批场景的自动审查、风险识别与评论回写"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    "httpx>=0.27",
+    "python-docx>=1.1",
+    "pymupdf>=1.24",
+    "pillow>=10",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["app*"]
